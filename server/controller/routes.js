@@ -25,7 +25,7 @@ router.get('/', function(req, res) {
 
 // run through postman to populate the the handlebars_nba_scrape DB
 router.get("/api/scrape", function(req, res) {
-	request('http://www.espn.com/nba/statistics/team/_/stat/team-comparison-per-game', function(err, response, html) {
+	request('http://www.espn.com/nba/statistics/team/_/stat/defense-per-game', function(err, response, html) {
 		if (err) {
 			throw err;
 		}
